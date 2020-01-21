@@ -8,6 +8,14 @@ body {
     margin: 0 5vw;
 }
 
+main .search-section {
+    text-align: center;
+}
+
+main .search-section input{
+    height: 3rem;
+}
+
 main .movies .all-movies {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -27,7 +35,7 @@ main .all-movies .each-movie p {
     font-weight: 800;
 }
 
-main .each-movie button {
+button {
     padding: .7rem 2rem;
     background: red;
     margin: .5rem;
