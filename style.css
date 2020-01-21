@@ -8,22 +8,23 @@ body {
     margin: 0 5vw;
 }
 
-main .movies {
-    height: 100vh;
-    width: 100%;
-}
-
 main .movies .all-movies {
-    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
 }
 
 main .all-movies .each-movie {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 20%;
-    margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .all-movies .each-movie p {
+    font-size: 20px;
+    font-weight: 800;
 }
 
 main .each-movie button {
@@ -34,3 +35,4 @@ main .each-movie button {
     font-size: 18px;
     font-weight: 600;
 }
+
