@@ -1,5 +1,5 @@
 $("#singleMovieDiv").hide();
-
+var moviesArr = [];
 
 $("#singleMovie").click(function(){
     var movieInput = $("#movieInput").val();
@@ -24,3 +24,28 @@ $("#singleMovie").click(function(){
         }
     });
 });
+
+function Moviestore(movieposter, movietitle){
+    this.movieposter = movieposter;
+    this.movietitle = movietitle;
+}
+
+$("#singleMovieFavorite").click(function(){
+    $("#moviesAddedList").empty();
+    var movieImage = $("#singleMovieImage").attr("src");
+    var movieName = $("#singleMovieTitle").text();
+
+    var addToList = new Moviestore(movieImage, movieName);
+            
+    moviesArr.push(addToList);
+    $("#singleMovieDiv").hide(1000);
+    addWishList(moviesArr);
+})
+
+function addWishList(movieList){
+
+    movieList.forEach(function(addedMovieData){
+        
+        $("#moviesAddedList").append("<div class='each-movie'><img src='" + addedMovieData.movieposter + "' alt='" + addedMovieData.movietitle + "' title='" + addedMovieData.movietitle + "'></div>");
+    }) 
+}
