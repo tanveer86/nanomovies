@@ -46,6 +46,6 @@ function addWishList(movieList){
 
     movieList.forEach(function(addedMovieData){
         
-        $("#moviesAddedList").append("<div class='each-movie'><img src='" + addedMovieData.movieposter + "' alt='" + addedMovieData.movietitle + "' title='" + addedMovieData.movietitle + "'></div>");
+        $("#moviesAddedList").append(`<div class='each-movie'><img src='${addedMovieData.movieposter}' alt=' ${addedMovieData.movietitle}' title='${addedMovieData.movietitle}'><p>${addedMovieData.movietitle}</p></div>`);
     }) 
 }
