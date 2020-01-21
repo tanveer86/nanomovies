@@ -1,0 +1,9 @@
+Nano movies is a project using which we can search for movies and add the movies to watchlist
+
+1. A user can search a movie using the search field
+
+2. After clicking on the search button user will get all the results from api called omdapi
+
+3. On search result page you can click on the button to add a movie to watchlist
+
+4. Once you add movie to watchlist the movie will hide from the search result and appeare in watchlist
