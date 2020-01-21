@@ -44,7 +44,7 @@ button {
     font-weight: 600;
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 768px){
     main .movies .all-movies {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;

@@ -1,6 +1,8 @@
 $("#singleMovieDiv").hide();
 var moviesArr = [];
 
+// this code is connecting to the api called omdb
+
 $("#singleMovie").click(function(){
     var movieInput = $("#movieInput").val();
     $.ajax({
